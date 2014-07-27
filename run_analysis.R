@@ -144,5 +144,6 @@ harAggDataWide <- dcast(harMelt,subject+activityname~measurement,mean, drop=FALS
 # write.csv(harMelt,"projectFullLong.csv")
 # write.csv(harCombinedMS,"projectFullWide.csv")
 # write.csv(harAggDataWide,"projectTidyWide.csv")
+#write.csv(harAggDataLong,"projectTidyLong.csv")
 
-write.csv(harAggDataLong,"projectTidyLong.csv")
+write.csv(harAggDataLong,"projectTidyLong.txt",row.names=FALSE)
